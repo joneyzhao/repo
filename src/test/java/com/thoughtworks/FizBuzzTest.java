@@ -124,4 +124,36 @@ public class FizBuzzTest {
         //then
         assertEquals("BuzzWhizz", resultValue);
     }
+
+
+    @Test
+    public void should_return_Buzz_when_say_753() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String resultValue = fizzBuzz.say(753);
+        //then
+        assertEquals("Fizz", resultValue);
+    }
+
+    @Test
+    public void should_return_Buzz_when_say_73() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String resultValue = fizzBuzz.say(73);
+        //then
+        assertEquals("Fizz", resultValue);
+    }
+
+    @Test
+    public void should_return_Buzz_when_say_173() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String resultValue = fizzBuzz.say(173);
+        //then
+        assertEquals("Fizz", resultValue);
+    }
+
 }
