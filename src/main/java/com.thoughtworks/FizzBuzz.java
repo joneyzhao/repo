@@ -1,8 +1,9 @@
 package com.thoughtworks;
 
+
 public class FizzBuzz {
     public String say(int i) {
-        boolean isDevidedByThreeAndFiveAndSeven = (i%5==0 && i%5==0 && i%7==0);
+        boolean isDevidedByThreeAndFiveAndSeven = (i%3==0 && i%5==0 && i%7==0);
         boolean isDevidedByThreeAndFive = (i%3==0 && i%5==0);
         boolean isDevidedByThreeAndSeven = (i%3==0 && i%7==0);
         boolean isDevidedByFiveAndSeven = (i%5==0 && i%7==0);
@@ -22,13 +23,13 @@ public class FizzBuzz {
             return "BuzzWhizz";
         }
         if(isDevidedByThree) {
-            return "Fizz";
+            return FizzBuzzWhizzConstants.ThreeOutput;
         }
         if(isDevidedByFive){
-            return "Buzz";
+            return FizzBuzzWhizzConstants.FiveOutput;
         }
         if(isDevidedBySeven){
-            return "Whizz";
+            return FizzBuzzWhizzConstants.SevenOutput;
         }
         return String.valueOf(i);
     }
