@@ -55,4 +55,14 @@ public class FizBuzzTest {
         //then
         assertEquals("Whizz", resultValue);
     }
+
+    @Test
+    public void should_return_Buzz_when_say_21() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String resultValue = fizzBuzz.say(21);
+        //then
+        assertEquals("FizzWhizz", resultValue);
+    }
 }
