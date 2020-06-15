@@ -2,13 +2,13 @@ package com.thoughtworks;
 
 public class FizzBuzz {
     public String say(int number) {
-        boolean isDevidedByThree = number % 3 == 0;
-        boolean isDevidedByFive = number % 5 == 0;
-        boolean isDevidedBySeven = number % 7 == 0;
+        boolean isDevidedByThree = number % FizzBuzzWhizzConstants.FizzNumber == 0;
+        boolean isDevidedByFive = number % FizzBuzzWhizzConstants.BuzzNumber == 0;
+        boolean isDevidedBySeven = number % FizzBuzzWhizzConstants.WhizzNumber == 0;
         String FizzBuzzWhizzResult = "";
         String inputValue = String.valueOf(number);
 
-        if(inputValue.contains("3")){
+        if(inputValue.contains(FizzBuzzWhizzConstants.FizzString)){
             return FizzBuzzWhizzConstants.ThreeOutput;
         }
 
