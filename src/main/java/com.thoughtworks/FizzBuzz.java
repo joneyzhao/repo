@@ -1,11 +1,15 @@
 package com.thoughtworks;
 
 public class FizzBuzz {
-    public String say(int i) {
-        boolean isDevidedByThree = i%3==0;
-        boolean isDevidedByFive = i%5==0;
-        boolean isDevidedBySeven = i%7==0;
+    public String say(int number) {
+        boolean isDevidedByThree = number%3==0;
+        boolean isDevidedByFive = number%5==0;
+        boolean isDevidedBySeven = number%7==0;
         String FizzBuzzWhizzResult = "";
+        String inputValue = String.valueOf(number);
+        if(inputValue.contains("3")){
+            return FizzBuzzWhizzConstants.ThreeOutput;
+        }
         if(isDevidedByThree) {
             FizzBuzzWhizzResult = FizzBuzzWhizzConstants.ThreeOutput;
         }
@@ -16,7 +20,7 @@ public class FizzBuzz {
             FizzBuzzWhizzResult = FizzBuzzWhizzResult + FizzBuzzWhizzConstants.SevenOutput;
         }
         if(FizzBuzzWhizzResult == ""){
-            FizzBuzzWhizzResult =  String.valueOf(i);
+            FizzBuzzWhizzResult =  String.valueOf(number);
         }
         return FizzBuzzWhizzResult;
     }
