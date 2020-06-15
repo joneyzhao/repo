@@ -11,16 +11,16 @@ public class FizzBuzz {
         boolean isDevidedByFive = i%5==0;
         boolean isDevidedBySeven = i%7==0;
         if(isDevidedByThreeAndFiveAndSeven){
-            return "FizzBuzzWhizz";
+            return  FizzBuzzWhizzConstants.ThreeOutput + FizzBuzzWhizzConstants.FiveOutput + FizzBuzzWhizzConstants.SevenOutput;
         }
         if(isDevidedByThreeAndFive){
-            return "FizzBuzz";
+            return FizzBuzzWhizzConstants.ThreeOutput + FizzBuzzWhizzConstants.FiveOutput;
         }
         if(isDevidedByThreeAndSeven){
-            return "FizzWhizz";
+            return FizzBuzzWhizzConstants.ThreeOutput + FizzBuzzWhizzConstants.SevenOutput;
         }
         if(isDevidedByFiveAndSeven){
-            return "BuzzWhizz";
+            return FizzBuzzWhizzConstants.FiveOutput + FizzBuzzWhizzConstants.SevenOutput;
         }
         if(isDevidedByThree) {
             return FizzBuzzWhizzConstants.ThreeOutput;
