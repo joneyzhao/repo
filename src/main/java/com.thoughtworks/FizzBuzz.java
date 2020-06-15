@@ -2,13 +2,16 @@ package com.thoughtworks;
 
 public class FizzBuzz {
     public String say(int i) {
-        if(i%3==0 && i%5==0){
+        boolean isDevidedByThreeAndFive = (i%3==0 && i%5==0);
+        boolean isDevidedByThree = i%3==0;
+        boolean isDevidedByFive = i%5==0;
+        if(isDevidedByThreeAndFive){
             return "FizzBuzz";
         }
-        if(i%3==0) {
+        if(isDevidedByThree) {
             return "Fizz";
         }
-        if(i%5==0){
+        if(isDevidedByFive){
             return "Buzz";
         }
         return String.valueOf(i);
