@@ -5,6 +5,7 @@ public class FizzBuzz {
         boolean isDevidedByThreeAndFive = (i%3==0 && i%5==0);
         boolean isDevidedByThree = i%3==0;
         boolean isDevidedByFive = i%5==0;
+        boolean isDevidedBySeven = i%7==0;
         if(isDevidedByThreeAndFive){
             return "FizzBuzz";
         }
@@ -13,6 +14,9 @@ public class FizzBuzz {
         }
         if(isDevidedByFive){
             return "Buzz";
+        }
+        if(isDevidedBySeven){
+            return "Whizz";
         }
         return String.valueOf(i);
     }
