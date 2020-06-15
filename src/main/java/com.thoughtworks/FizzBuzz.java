@@ -8,6 +8,12 @@ public class FizzBuzz {
         String FizzBuzzWhizzResult = "";
         String inputValue = String.valueOf(number);
 
+        if(inputValue.contains(FizzBuzzWhizzConstants.BuzzString)){
+            if(isDevidedByFive && isDevidedBySeven){
+                return "BuzzWhizz";
+            }
+        }
+
         if(inputValue.contains(FizzBuzzWhizzConstants.FizzString)){
             return FizzBuzzWhizzConstants.ThreeOutput;
         }

@@ -76,16 +76,6 @@ public class FizBuzzTest {
     }
 
     @Test
-    public void should_return_Buzz_when_say_35() {
-        //given
-        FizzBuzz fizzBuzz = new FizzBuzz();
-        //when
-        String resultValue = fizzBuzz.say(35);
-        //then
-        assertEquals("Fizz", resultValue);
-    }
-
-    @Test
     public void should_return_Buzz_when_say_30() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
@@ -112,6 +102,26 @@ public class FizBuzzTest {
         //when
         String resultValue = fizzBuzz.say(105);
         //then
+        assertEquals("BuzzWhizz", resultValue);
+    }
+
+    @Test
+    public void should_return_Buzz_when_say_210() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String resultValue = fizzBuzz.say(210);
+        //then
         assertEquals("FizzBuzzWhizz", resultValue);
+    }
+
+    @Test
+    public void should_return_Buzz_when_say_35() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String resultValue = fizzBuzz.say(35);
+        //then
+        assertEquals("BuzzWhizz", resultValue);
     }
 }
